@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="main">
+    <nav>
+      <span><img width="120" src="assets/images/netflix-logo.png" alt="Netflix Logo"></span>
+      <div>
+        <select id="opt">
+          <option>English</option>
+          <option>हिन्दी</option>
+        </select>
+
+        <button class="btn btn-red-sm">Sign In</button>
+      </div>
+    </nav>
+
+    <div class="box"></div>
+
+    <div class="dok">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <h3>Starts at ₹149. Cancel at any time.</h3>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+      <form class="dok-button">
+        <input id="email" type="email" placeholder="Email Address" required>
+        <button class="btn btn-red">Get Started &gt;</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="line"></div>
+
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <h2>Choose your plan</h2>
+    <div class="pricing-cards">
+      <div class="card">
+        <h3>Mobile</h3>
+        <p>₹149/month</p>
+        <ul>
+          <li>480p Quality</li>
+          <li>1 Device at a time</li>
+        </ul>
+        <button class="btn btn-red-sm">Subscribe</button>
+      </div>
+      <div class="card">
+        <h3>Standard</h3>
+        <p>₹499/month</p>
+        <ul>
+          <li>1080p Quality</li>
+          <li>2 Devices at a time</li>
+        </ul>
+        <button class="btn btn-red-sm">Subscribe</button>
+      </div>
+      <div class="card">
+        <h3>Premium</h3>
+        <p>₹649/month</p>
+        <ul>
+          <li>4K + HDR</li>
+          <li>4 Devices at a time</li>
+        </ul>
+        <button class="btn btn-red-sm">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <!-- Features Section -->
+  <section class="feature">
+    <div class="feature-text">
+      <h2>Enjoy on your TV</h2>
+      <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+    </div>
+    <div class="feature-media">
+      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="Watch Netflix on TV" loading="lazy">
+      <video autoplay muted loop playsinline class="tv-video">
+        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section class="feature reverse">
+    <div class="feature-media">
+      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Download shows on mobile" loading="lazy">
+    </div>
+    <div class="feature-text">
+      <h2>Download your shows to watch offline</h2>
+      <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section class="feature">
+    <div class="feature-text">
+      <h2>Watch Everywhere</h2>
+      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    </div>
+    <div class="feature-media">
+      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="Multiple devices" loading="lazy">
+      <video autoplay loop muted playsinline class="tv-video">
+        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section class="feature reverse">
+    <div class="feature-media">
+      <img src="assets/images/img-4.png" alt="Children Profile" width="400" loading="lazy">
+    </div>
+    <div class="feature-text">
+      <h2>Create profiles for kids</h2>
+      <p>Send children on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>What is Netflix?</summary>
+      <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more.</p>
+    </details>
+    <details>
+      <summary>How much does Netflix cost?</summary>
+      <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans start from ₹149.</p>
+    </details>
+    <details>
+      <summary>Where can I watch?</summary>
+      <p>Watch anywhere, anytime, on unlimited devices. Sign in with your account to watch instantly on the web or app.</p>
+    </details>
+    <details>
+      <summary>Can I cancel?</summary>
+      <p>Yes! Cancel your plan anytime in just a few clicks, with no cancellation fees.</p>
+    </details>
+  </section>
+
+  <div class="line"></div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Questions? Call 000-800-919-1694</p>
+    <div class="footer-links">
+      <a href="#">FAQ</a>
+      <a href="#">Help Center</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy</a>
+      <a href="#">Cookie Preferences</a>
+      <a href="#">Corporate Information</a>
+    </div>
+  </footer>
+
+  <button id="backToTop">↑</button>
+
+  <!-- Scripts -->
+  <script>
+    const btn = document.getElementById("backToTop");
+    window.onscroll = () => btn.style.display = window.scrollY > 200 ? "block" : "none";
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+    const translations = {
+      en: {
+        heroTitle: "Unlimited movies, TV shows and more",
+        heroSubtitle: "Starts at ₹149. Cancel at any time.",
+        heroDesc: "Ready to watch? Enter your email to create or restart your membership.",
+        pricingTitle: "Choose your plan",
+        feature1Title: "Enjoy on your TV",
+        feature1Text: "Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
+        feature2Title: "Download your shows to watch offline",
+        feature2Text: "Save your favorites easily and always have something to watch.",
+        feature3Title: "Watch Everywhere",
+        feature3Text: "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.",
+        feature4Title: "Create profiles for kids",
+        feature4Text: "Send children on adventures with their favorite characters in a space made just for them—free with your membership.",
+        faqTitle: "Frequently Asked Questions",
+        faq1Q: "What is Netflix?",
+        faq1A: "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more.",
+        faq2Q: "How much does Netflix cost?",
+        faq2A: "Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans start from ₹149.",
+        faq3Q: "Where can I watch?",
+        faq3A: "Watch anywhere, anytime, on unlimited devices. Sign in with your account to watch instantly on the web or app.",
+        faq4Q: "Can I cancel?",
+        faq4A: "Yes! Cancel your plan anytime in just a few clicks, with no cancellation fees.",
+        footerQ: "Questions? Call 000-800-919-1694"
+      },
+      hi: {
+        heroTitle: "अनलिमिटेड फ़िल्में, टीवी शो और बहुत कुछ",
+        heroSubtitle: "₹149 से शुरू। कभी भी रद्द करें।",
+        heroDesc: "देखने के लिए तैयार हैं? अपनी सदस्यता बनाने या फिर से शुरू करने के लिए अपना ईमेल दर्ज करें।",
+        pricingTitle: "अपनी योजना चुनें",
+        feature1Title: "अपने टीवी पर आनंद लें",
+        feature1Text: "स्मार्ट टीवी, प्लेस्टेशन, एक्सबॉक्स, क्रोमकास्ट, एप्पल टीवी, ब्लू-रे प्लेयर और बहुत कुछ पर देखें।",
+        feature2Title: "ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें",
+        feature2Text: "अपनी पसंदीदा चीज़ों को आसानी से सहेजें और हमेशा कुछ न कुछ देखने के लिए तैयार रहें।",
+        feature3Title: "हर जगह देखें",
+        feature3Text: "अपने फोन, टैबलेट, लैपटॉप और टीवी पर अनलिमिटेड फ़िल्में और टीवी शो स्ट्रीम करें।",
+        feature4Title: "बच्चों के लिए प्रोफ़ाइल बनाएं",
+        feature4Text: "बच्चों को उनके पसंदीदा किरदारों के साथ रोमांच पर भेजें—सदस्यता के साथ मुफ्त।",
+        faqTitle: "अक्सर पूछे जाने वाले प्रश्न",
+        faq1Q: "Netflix क्या है?",
+        faq1A: "Netflix एक स्ट्रीमिंग सेवा है जो टीवी शो, फ़िल्में, एनीमे, डॉक्यूमेंट्री और बहुत कुछ प्रदान करती है।",
+        faq2Q: "Netflix की कीमत कितनी है?",
+        faq2A: "स्मार्टफोन, टैबलेट, स्मार्ट टीवी, लैपटॉप या स्ट्रीमिंग डिवाइस पर Netflix देखें। योजनाएँ ₹149 से शुरू।",
+        faq3Q: "मैं कहाँ देख सकता हूँ?",
+        faq3A: "कहीं भी, कभी भी अनलिमिटेड डिवाइस पर देखें। वेब या ऐप पर तुरंत देखने के लिए अपने खाते से साइन इन करें।",
+        faq4Q: "क्या मैं रद्द कर सकता हूँ?",
+        faq4A: "हाँ! अपनी योजना को कभी भी कुछ क्लिक में रद्द करें, कोई रद्दीकरण शुल्क नहीं।",
+        footerQ: "सवाल हैं? कॉल करें 000-800-919-1694"
+      }
+    };
+
+    function updateLanguage(lang) {
+      document.querySelector(".dok h1").textContent = translations[lang].heroTitle;
+      document.querySelector(".dok h3").textContent = translations[lang].heroSubtitle;
+      document.querySelector(".dok p").textContent = translations[lang].heroDesc;
+      document.querySelector(".pricing h2").textContent = translations[lang].pricingTitle;
+
+      const features = document.querySelectorAll(".feature");
+      features[0].querySelector("h2").textContent = translations[lang].feature1Title;
+      features[0].querySelector("p").textContent = translations[lang].feature1Text;
+      features[1].querySelector("h2").textContent = translations[lang].feature2Title;
+      features[1].querySelector("p").textContent = translations[lang].feature2Text;
+      features[2].querySelector("h2").textContent = translations[lang].feature3Title;
+      features[2].querySelector("p").textContent = translations[lang].feature3Text;
+      features[3].querySelector("h2").textContent = translations[lang].feature4Title;
+      features[3].querySelector("p").textContent = translations[lang].feature4Text;
+
+      const faqs = document.querySelectorAll(".faq-section details");
+      faqs[0].querySelector("summary").textContent = translations[lang].faq1Q;
+      faqs[0].querySelector("p").textContent = translations[lang].faq1A;
+      faqs[1].querySelector("summary").textContent = translations[lang].faq2Q;
+      faqs[1].querySelector("p").textContent = translations[lang].faq2A;
+      faqs[2].querySelector("summary").textContent = translations[lang].faq3Q;
+      faqs[2].querySelector("p").textContent = translations[lang].faq3A;
+      faqs[3].querySelector("summary").textContent = translations[lang].faq4Q;
+      faqs[3].querySelector("p").textContent = translations[lang].faq4A;
+
+      document.querySelector("footer p").textContent = translations[lang].footerQ;
+    }
+
+    // Header language selector
+   document.getElementById("opt").addEventListener("change", e => {
+  const lang = e.target.value === "हिन्दी" ? "hi" : "en";
+  updateLanguage(lang);
+  document.getElementById("footerLang").value = e.target.value; // sync footer
+});
+
+   
+  </script>
+
+</body>
+</html>
